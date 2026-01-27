@@ -1,0 +1,37 @@
+.logo{
+    width: 180px;   /* ändra storlek här */
+    height: auto;   /* behåller proportioner */
+    display: block;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+}
+.products img {
+  width: auto;   /* ändra detta värde */
+  height: auto;   /* behåller rätt proportioner */
+}
+.ads img{
+    width: 200px;   /* ändra detta värde */
+    height: auto;
+}
+.mainwrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.ads{
+    display: flex;
+    flex-direction: column;
+}
+.p1, .p2, .p3{
+    display: flex;
+    width: 800px;
+    height: 400px;
+    
+    order: 2px solid #1e90ff;      /* snygg blå kant */
+    border-radius: 20px;             /* rundade hörn */
+    padding: 20px;                   /* luft inne i rutan */
+    background-color: white;         /* ren vit bakgrund */
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08); /* mjuk skugga */
+}
