@@ -1,37 +1,138 @@
+.container{
+    max-width: 1100px;    
+  margin: 0 auto;   
+  padding: 0 20px;
+  
+}
 .logo{
-    width: 180px;   /* ändra storlek här */
-    height: auto;   /* behåller proportioner */
+    width: 180px;   
+    height: auto;   
     display: block;
+}
+body{
+    background: #FFFFFF;
 }
 .nav-links{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    list-style: none; 
 }
+
+.nav-links a {
+  text-decoration: none; /* tar bort underline */
+  color: black;
+  font-size: 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+border: 1px solid #7C3AED;
+  border-radius: 8px;
+  padding: 10px 10px; 
+}
+
 .products img {
-  width: auto;   /* ändra detta värde */
-  height: auto;   /* behåller rätt proportioner */
+  width: 345px;   /* test: 320px */
+  height: auto;
+}
+.products{
+    display: flex;
+  flex-direction: column;
+  gap: 30px;   
+  margin-left: 50px;
+    
+    
 }
 .ads img{
-    width: 200px;   /* ändra detta värde */
+    width: 220px;  
     height: auto;
+    padding: 20px;
 }
 .mainwrapper{
     display: flex;
-    justify-content: space-between;
+  justify-content: space-between;
+  margin-top: 60px;
+  gap: 20px;
+  align-items: flex-start;
 }
 .ads{
     display: flex;
     flex-direction: column;
+    gap: 120px;
 }
-.p1, .p2, .p3{
+.p1, .p2, .p3 {
     display: flex;
-    width: 800px;
-    height: 400px;
+    align-items: center;
+    width: 600px;
+  height: auto;
     
-    order: 2px solid #1e90ff;      /* snygg blå kant */
-    border-radius: 20px;             /* rundade hörn */
-    padding: 20px;                   /* luft inne i rutan */
-    background-color: white;         /* ren vit bakgrund */
+    background-color: #111827 ; 
 
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08); /* mjuk skugga */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    border: 1px solid #272629;
+  border-radius: 18px;
+  padding: 15px; 
+}
+.p1:hover, .p2:hover, .p3:hover{
+    border: 1px solid #7C3AED;
+}
+
+.desc1, .desc2, .desc3{
+    color: white;  
+    text-align: center;
+    margin-left: 10px;
+    height: fit-content;
+}
+.desc1 a, .desc2 a, .desc3 a{
+    color: wheat;
+    
+}
+.map iframe{
+    width: 630px;
+}
+/* object.html */
+
+.prodpic img{
+    width: 600px;
+}
+.randtext{
+    width: 300px;
+    height: 300px;
+    border: 1px solid #5d5a61;
+    margin-top: 50px;
+    text-align: center;
+}
+.proddesc{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.objdesc{
+    display: flex;
+    border: 1px solid #5d5a61;
+    height: 350px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.rubrik{
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+}
+.pris{
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+}
+.prisdesc{
+    border: 1px solid #5d5a61;
+}
+.prowrap{
+   
+}
+.allwrap{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
 }
